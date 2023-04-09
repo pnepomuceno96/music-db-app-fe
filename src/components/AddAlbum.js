@@ -26,17 +26,20 @@ function AddAlbum() {
     const handleSubmit = (event) => {
         event.preventDefault();
         const newAlbum = {title: title, artistName: artistName, releaseDate: date, cover: cover}
-
+        // Assemble a new album from form data, then use fetch API to post it to server.
         fetch('http://localhost:3030/albums', {
             method: 'POST',
             mode: 'cors',
             headers: {'Content-type': 'application/json; charset=UTF-8'},
             body: JSON.stringify(newAlbum)
         })
+
+        // Logs album data in console to ensure the user the data is correct
         console.log(newAlbum)
+        // Open dialog box to allow user to either close box & remain on page or to return to landing page
         handleOpen()
     }
-    
+    // Return form for setting metadata of a new album
     return (
     <div>
         <div className="toolbar">

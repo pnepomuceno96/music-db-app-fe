@@ -2,6 +2,7 @@ import React from "react";
 import "./Album.css"
 
 function Album(props) {
+    // Returns card that displays album metadata(Title, Artist, Release Year, Cover Art)
     return (<>
         <div className="card">
             <h3>{props.title}</h3>
