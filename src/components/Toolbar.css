@@ -1,0 +1,19 @@
+.toolbar {
+    background-color: blueviolet;
+    height: 5rem;
+    display: flex;
+    border-style: solid solid solid solid;
+    border-color: blueviolet;
+    border-width: 1rem;
+}
+
+.center {
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    vertical-align: center;
+}

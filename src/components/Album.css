@@ -1,0 +1,16 @@
+.card {
+    background-color: rgb(171, 234, 255);
+    width: 21rem;
+    margin: 1rem;
+    border-style: solid;
+    border-color: rgb(64, 188, 230);
+    border-width: 7px;
+    text-align: center;
+    display: inline-block;
+}
+
+.cover {
+    max-width: 20rem;
+    max-height: 20rem;
+    margin: 5px;
+}

@@ -1,0 +1,21 @@
+.toolbar {
+    background-color: blueviolet;
+    height: 5rem;
+    display: flex;
+    border-style: solid solid solid solid;
+    border-color: blueviolet;
+    border-width: 1rem;
+}
+
+.center {
+    align-items: center;
+}
+
+#formStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(203, 159, 197);
+}
