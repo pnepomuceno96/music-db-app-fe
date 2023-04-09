@@ -1,3 +1,8 @@
+# Music Database App
+
+This app is used by entering music albums in a database, which is currently on a JSON server. Use 'npm start:server' to start the JSON server.
+The homepage displays a list of albums on the server. Click "Add an album" to enter new album metadata to the JSON server.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
