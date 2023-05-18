@@ -1,40 +1,6 @@
 {
   "albums": [
-    {
-      "title": "No. 1 In Heaven",
-      "artistName": "Sparks",
-      "releaseDate": "1979-03-01",
-      "cover": "https://e.snmc.io/i/fullres/w/031d4fe28e1ea0558b58611ca2411179/8572417",
-      "id": 1,
-      "tracklist": [
-        "Tryouts For the Human Race",
-        "Academy Award Performance",
-        "La Dolce Vita",
-        "Beat The Clock",
-        "My Other Voice",
-        "The Number One Song in Heaven"
-      ]
-    },
-    {
-      "title": "The Argument",
-      "artistName": "Fugazi",
-      "releaseDate": "2001-10-12",
-      "cover": "https://images-na.ssl-images-amazon.com/images/I/510O2mFHbeL._SX466_.jpg",
-      "id": 2,
-      "tracklist": [
-        "Intro",
-        "Cashout",
-        "Full Disclosure",
-        "Epic Problem",
-        "Life And Limb",
-        "The Kill",
-        "Strangelight",
-        "Oh",
-        "Ex-Spectator",
-        "Nightshop",
-        "Argument"
-      ]
-    }
+    
   ],
   "artists": []
 }
