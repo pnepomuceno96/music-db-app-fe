@@ -1,6 +1,6 @@
 import {React, useState, useEffect} from "react"
 import Toolbar from "./Toolbar";
-import Album from "./Album";
+import Album from "./Album"
 
 function Home() {
     const [albums, setAlbums] = useState([])
@@ -27,7 +27,7 @@ function Home() {
             <ul>
 
                 {albums.map((album) => 
-                <Album key={album.id} title={album.title} artistName={album.artistName} releaseDate={album.releaseDate} cover={album.cover}/>)}
+                <Album key={album.id} id={album.id} title={album.title} artistName={album.artistName} releaseDate={album.releaseDate} cover={album.cover} tracklist={album.tracklist}/>)}
             </ul>
         </div>
     )
