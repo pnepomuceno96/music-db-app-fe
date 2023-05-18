@@ -9,27 +9,18 @@ function AlbumDetails() {
     const [album, setAlbum] = useState(
         {id: 0, title: "", artistName: "", cover: "", releaseDate: "", tracklist: []}
         );
-    //const [tracklist, setTracks] = useState([])
-    
-    console.log(id)
-    
-
-    
     
     const getData = () => {
-        console.log("getting data")
         var requestOptions = {
             method: "GET",
             redirect: "follow"
         };
-
+        //Make HTTP request for album data
         fetch(`http://localhost:3030/albums?id=${id}`, requestOptions)
         .then((response) =>  {return response.json()})
         .then((result) => {
-            console.log(result[0]);
             setAlbum(prevState =>
-                {
-                console.log(result[0].title);    
+                {  
                 return { ...prevState,
                     id: result[0].id, 
                     title: result[0].title, 
@@ -42,17 +33,16 @@ function AlbumDetails() {
             })
         .catch((err) => console.log("error", err))
         .finally(() => {
+            // Album data is ready to be rendered
             setLoading(false);
-            console.log("finally")
-            //displayResult();
         })   
     }
 
     useEffect(() => {getData()}, [])
+
+    // Wait for data to load
     if (loading) {return(<><p>Loading...</p></>)};
-    //const displayResult = () => {
-    console.log(album)
-    console.log(album.tracklist)
+    
     return (<div>
             <h2>{album.title}</h2>
             <h3>by {album.artistName}</h3>
@@ -64,7 +54,7 @@ function AlbumDetails() {
                 <p>{album.tracklist.indexOf(track) + 1}. {track}</p>)}
             </ul>
         </div>);
-    //}
+    
 }
 
 export default AlbumDetails;
